@@ -3,7 +3,7 @@ import { useTheme, useThemeUpdate, lightThemeStyles, darkThemeStyles } from '../
 
 // antd
 import { Table } from 'antd';
-// import type { ColumnsType } from 'antd/es/table';
+import type { ColumnsType } from 'antd/es/table';
 
 // import data
 import {mockDataTeam} from '../../../../../6-PROJECTS/GITHUB REMOTE REPOS/Admin-Dashboard/admin-dashboard/src/data/mockData'
@@ -52,6 +52,7 @@ export const Team = () => {
     const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
     
     const darkTheme = useTheme()
+    const toggleTheme = useThemeUpdate()
   
     const themeStyles = {
       ...(darkTheme ? darkThemeStyles : lightThemeStyles),

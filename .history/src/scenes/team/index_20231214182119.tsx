@@ -52,6 +52,7 @@ export const Team = () => {
     const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
     
     const darkTheme = useTheme()
+    const toggleTheme = useThemeUpdate()
   
     const themeStyles = {
       ...(darkTheme ? darkThemeStyles : lightThemeStyles),

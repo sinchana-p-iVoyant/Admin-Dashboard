@@ -1,13 +1,13 @@
 import React, { Key, useState } from 'react'
-import { useTheme, useThemeUpdate, lightThemeStyles, darkThemeStyles } from '../../../../../6-PROJECTS/GITHUB REMOTE REPOS/Admin-Dashboard/admin-dashboard/src/ThemeContext'
+import { useTheme, useThemeUpdate, lightThemeStyles, darkThemeStyles } from '../../ThemeContext'
 
 // antd
-import { Table } from 'antd';
-// import type { ColumnsType } from 'antd/es/table';
+import { Checkbox, Divider, Radio, Table } from 'antd';
+import type { ColumnsType } from 'antd/es/table';
 
 // import data
-import {mockDataTeam} from '../../../../../6-PROJECTS/GITHUB REMOTE REPOS/Admin-Dashboard/admin-dashboard/src/data/mockData'
-import Header from '../../../../../6-PROJECTS/GITHUB REMOTE REPOS/Admin-Dashboard/admin-dashboard/src/components/header/Header';
+import {mockDataTeam} from '../../data/mockData'
+import Header from '../../components/header/Header';
 
 // interface DataType {
 //   key: React.Key;
@@ -52,6 +52,7 @@ export const Team = () => {
     const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
     
     const darkTheme = useTheme()
+    const toggleTheme = useThemeUpdate()
   
     const themeStyles = {
       ...(darkTheme ? darkThemeStyles : lightThemeStyles),

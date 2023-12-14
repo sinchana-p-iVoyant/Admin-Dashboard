@@ -53,12 +53,6 @@ export const Team = () => {
     
     const darkTheme = useTheme()
   
-    const themeStyles = {
-      ...(darkTheme ? darkThemeStyles : lightThemeStyles),
-      color: darkTheme ? "#DDE6ED" : "#27374D",
-      margin: 0,
-      padding: 0
-    }
 
     const onSelectChange = (newSelectedRowKeys: React.Key[]) => {
       console.log('selectedRowKeys changed: ', newSelectedRowKeys);
