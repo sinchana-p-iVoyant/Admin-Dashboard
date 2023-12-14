@@ -33,7 +33,7 @@ const Topbar = () => {
       </div>
 
       <div className='icons-container'>
-        <div className="each-icon" onClick={toggleTheme} style={{ cursor: 'pointer' }}>
+        <div className="each-icon" onClick={toggleTheme}>
           {
             darkTheme ? <MdOutlineDarkMode /> : <MdOutlineLightMode />
           }

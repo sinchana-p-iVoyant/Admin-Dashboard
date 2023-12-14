@@ -6,7 +6,8 @@ import { MdNotificationsNone } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 import { MdPersonOutline } from "react-icons/md";
 import { IoMdSearch } from "react-icons/io";
-// import type { SearchProps } from '../Search';
+import type { SearchProps } from '../Search';
+
 
 import { useTheme, useThemeUpdate, lightThemeStyles, darkThemeStyles } from '../../../ThemeContext'
 import './Topbar.css'
@@ -33,7 +34,7 @@ const Topbar = () => {
       </div>
 
       <div className='icons-container'>
-        <div className="each-icon" onClick={toggleTheme} style={{ cursor: 'pointer' }}>
+        <div className="each-icon" onClick={toggleTheme}>
           {
             darkTheme ? <MdOutlineDarkMode /> : <MdOutlineLightMode />
           }
