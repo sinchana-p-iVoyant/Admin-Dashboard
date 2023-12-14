@@ -6,7 +6,7 @@ import { Table } from 'antd';
 // import type { ColumnsType } from 'antd/es/table';
 
 // import data
-import {mockDataTeam} from '../../data/mockData'
+import {mockDataTeam} from '../../'
 import Header from '../../../../../6-PROJECTS/GITHUB REMOTE REPOS/Admin-Dashboard/admin-dashboard/src/components/header/Header';
 
 // interface DataType {
@@ -52,6 +52,7 @@ export const Team = () => {
     const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
     
     const darkTheme = useTheme()
+    const toggleTheme = useThemeUpdate()
   
     const themeStyles = {
       ...(darkTheme ? darkThemeStyles : lightThemeStyles),
