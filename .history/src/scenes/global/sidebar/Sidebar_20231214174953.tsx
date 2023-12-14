@@ -17,7 +17,7 @@ import { IoAnalyticsOutline } from "react-icons/io5";
 import { CiMap } from "react-icons/ci";
 import { FiMenu } from "react-icons/fi";
 
-import image from '../../../../src/assets/jk3.jpg'
+import image from '../../../../src/assets/jk'
 // imports from antd
 import { Layout, Menu } from 'antd';
 
