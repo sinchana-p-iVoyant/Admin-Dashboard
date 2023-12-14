@@ -27,8 +27,8 @@ function App() {
       <div className="app">
         <Sidebar /> 
         
-        <main className="content">
           <Topbar />
+        <main className="content">
           <Routes> 
               {/* <Route path='/' element={ <Dashboard/> } /> */}
               {/* <Route path='/team' element={ <Team/> } /> */}
