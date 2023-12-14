@@ -8,7 +8,7 @@ import Sidebar from './scenes/global/sidebar/Sidebar'
 import Topbar from './scenes/global/topbar/Topbar'
 
 // import pages
-import {Dashboard} from './scenes/dashboard'
+import Dashboard from './scenes/dashboard'
 import {Team} from './scenes/team'
 import {Contacts} from './scenes/contacts'
 import {Invoices} from './scenes/invoices'

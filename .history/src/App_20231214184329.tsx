@@ -8,7 +8,7 @@ import Sidebar from './scenes/global/sidebar/Sidebar'
 import Topbar from './scenes/global/topbar/Topbar'
 
 // import pages
-import {Dashboard} from './scenes/dashboard'
+import Dashboard from './scenes/dashboard'
 import {Team} from './scenes/team'
 import {Contacts} from './scenes/contacts'
 import {Invoices} from './scenes/invoices'
@@ -32,7 +32,7 @@ const App: React.FC = () => {
               <Route path='/' element={ <Dashboard/> } />
               <Route path='/team' element={ <Team/> } />
               <Route path='/contacts' element={ <Contacts/> } />
-              <Route path='/invoices' element={ <Invoices/> } />
+              {/* <Route path='/invoices' element={ <Invoices/> } /> */}
               {/* <Route path='/form' element={ <Form/> } /> */}
                 {/* <Route path='/bar' element={ <Bar/> } /> */}
                 {/* <Route path='/pie' element={ <Pie/> } /> */}
