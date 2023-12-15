@@ -105,7 +105,7 @@ const Sidebar = () => {
       key: "4",
       icon: <CiMap />,
       label: "geography Chart",
-       link: '/geography',
+       link: '/bar',
     },
   ]
 

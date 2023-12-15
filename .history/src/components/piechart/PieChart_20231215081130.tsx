@@ -1,6 +1,7 @@
 import { ResponsivePie } from "@nivo/pie";
 import { mockPieData as data } from "../../data/mockData";
-import { useTheme } from '../../ThemeContext'
+import { lightThemeStyles, useTheme } from '../../ThemeContext'
+import { darkThemeStyles } from '../../../.history/src/ThemeContext_20231214220932';
 
 export const PieChart = () => {
 
@@ -49,7 +50,7 @@ export const PieChart = () => {
         modifiers: [["darker", 0.2]],
       }}
       arcLinkLabelsSkipAngle={10}
-      arcLinkLabelsTextColor= {darkTheme ? 'white' : 'black'}
+      arcLinkLabelsTextColor= {darkTheme ?  : ''}
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: "color" }}
       enableArcLabels={false}

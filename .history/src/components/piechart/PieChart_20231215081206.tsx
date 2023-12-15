@@ -1,6 +1,7 @@
 import { ResponsivePie } from "@nivo/pie";
 import { mockPieData as data } from "../../data/mockData";
 import { useTheme } from '../../ThemeContext'
+import { darkThemeStyles } from '../../../.history/src/ThemeContext_20231214220932';
 
 export const PieChart = () => {
 

@@ -99,13 +99,12 @@ const Sidebar = () => {
       key: "3",
       icon: <IoAnalyticsOutline />,
       label: "Line Chart",
-       link: '/line',
+      
     },
     {
       key: "4",
       icon: <CiMap />,
       label: "geography Chart",
-       link: '/geography',
     },
   ]
 

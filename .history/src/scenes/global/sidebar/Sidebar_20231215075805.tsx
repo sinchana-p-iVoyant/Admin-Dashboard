@@ -66,19 +66,16 @@ const Sidebar = () => {
       key: "1",
       icon: <MdOutlinePerson />,
       label: "Profile Form",
-      link: '/form',
     },
     {
       key: "2",
       icon: <MdOutlineCalendarToday />,
       label: "Calendar",
-      link: '/calendar',
     },
     {
       key: "3",
       icon: <FaRegQuestionCircle />,
       label: "FAQ Page",
-      link: '/faq',
     },
   ]
 
@@ -87,25 +84,21 @@ const Sidebar = () => {
       key: "1",
       icon: <MdOutlineBarChart />,
       label: "Bar Chart",
-      link: '/bar',
     },
     {
       key: "2",
       icon: <MdOutlinePieChart />,
       label: "Pie Chart",
-       link: '/pie',
     },
     {
       key: "3",
       icon: <IoAnalyticsOutline />,
       label: "Line Chart",
-       link: '/line',
     },
     {
       key: "4",
       icon: <CiMap />,
       label: "geography Chart",
-       link: '/geography',
     },
   ]
 
@@ -237,43 +230,24 @@ const Sidebar = () => {
           defaultSelectedKeys={["1"]}
         >
           {pagesItems.map(item => (
-            <Menu.Item key={item.key} icon={ item.icon }>
+            <Menu.Item>
               {item.link ? (
-                <Link to={item.link}>{ item.label }</Link>
+                <Link></Link>
               ): (
-                  <span>{ item.label }</span>
+                  <span></span>
               )}
             </Menu.Item>
           ))}
         </Menu>
         <h3>Charts</h3>
-        {/* <Menu 
-          className={!darkTheme ? 'light-font' : ""}
-          style={{ backgroundColor: 'transparent' }}
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={["1"]}
-          items={chartsItems}
-        /> */}
         <Menu 
           className={!darkTheme ? 'light-font' : ""}
           style={{ backgroundColor: 'transparent' }}
           theme="dark"
           mode="inline"
           defaultSelectedKeys={["1"]}
-        >
-          {
-            chartsItems.map(item => (
-              <Menu.Item key={item.key} icon={item.icon}>
-                {item.link ? (
-                  <Link to={item.link}>{ item.label }</Link>
-                ): (
-                    <span>{ item.label }</span>
-                )}
-              </Menu.Item>
-            ))
-          }
-        </Menu>
+          items={chartsItems}
+        />
       </Sider>
     </div>
   )

@@ -93,19 +93,17 @@ const Sidebar = () => {
       key: "2",
       icon: <MdOutlinePieChart />,
       label: "Pie Chart",
-       link: '/pie',
+       link: '/bar',
     },
     {
       key: "3",
       icon: <IoAnalyticsOutline />,
       label: "Line Chart",
-       link: '/line',
     },
     {
       key: "4",
       icon: <CiMap />,
       label: "geography Chart",
-       link: '/geography',
     },
   ]
 

@@ -20,7 +20,7 @@ export const PieChart = () => {
           },
           legend: {
             text: {
-              fill: 'black',
+              fill: 'white',
             },
           },
           ticks: {
@@ -49,7 +49,7 @@ export const PieChart = () => {
         modifiers: [["darker", 0.2]],
       }}
       arcLinkLabelsSkipAngle={10}
-      arcLinkLabelsTextColor= {darkTheme ? 'white' : 'black'}
+      arcLinkLabelsTextColor='black'
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: "color" }}
       enableArcLabels={false}
