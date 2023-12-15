@@ -49,7 +49,7 @@ export const PieChart = () => {
         modifiers: [["darker", 0.2]],
       }}
       arcLinkLabelsSkipAngle={10}
-      arcLinkLabelsTextColor= {darkTheme ? 'white' : 'black'}
+      arcLinkLabelsTextColor='black'
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: "color" }}
       enableArcLabels={false}
@@ -64,7 +64,7 @@ export const PieChart = () => {
           id: "dots",
           type: "patternDots",
           background: "inherit",
-          color: "rgba(255, 255, 255, 0.3)",
+          color: "rgba(000, 000, 000, 0.3)",
           size: 4,
           padding: 1,
           stagger: true,
